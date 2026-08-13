@@ -22,7 +22,7 @@ pip install dio-desafio-pacote-processamento-imagem
 ```
 
 ## Author
-Charles
+Marina Ribas
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
