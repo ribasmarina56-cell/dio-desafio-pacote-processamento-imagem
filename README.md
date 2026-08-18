@@ -1,28 +1,72 @@
 # processamento_imagem
 
-Description. 
-The package processamento_imagem is used to:
-	Processamento:
-		- Comparacao de histogramas
-		- Similaridade de estruturas
-		- Redimensionamento de imagem
-	Utilidades:
-		- Carregar imagem
-		- Salvar imagem
-		- Exibir imagem
-		- Exibir resultados
-		- Exibir histograma
+Pacote Python para processamento e manipulação de imagens.
 
-## Installation
+## Funcionalidades
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dio-desafio-pacote-processamento-imagem
+### Processamento
+- Comparação de histogramas.
+- Similaridade estrutural com SSIM.
+- Redimensionamento de imagens.
+
+### Utilidades
+- Carregar imagens.
+- Salvar imagens.
+- Exibir imagens.
+- Exibir resultados para comparação.
+- Exibir histogramas.
+
+## Instalação
 
 ```bash
 pip install dio-desafio-pacote-processamento-imagem
 ```
 
-## Author
+## Uso
+
+```python
+from processamento_imagem import (
+    encontrar_diferenca,
+    transferir_histograma,
+    redimensionar_imagem,
+    ler_imagem,
+    salvar_imagem,
+)
+
+imagem1 = ler_imagem("imagem1.jpg")
+imagem2 = ler_imagem("imagem2.jpg")
+
+resultado = encontrar_diferenca(imagem1, imagem2)
+imagem_ajustada = transferir_histograma(imagem1, imagem2)
+imagem_menor = redimensionar_imagem(imagem1, 0.5)
+
+salvar_imagem(imagem_ajustada, "resultado.jpg")
+```
+
+## Desenvolvimento
+
+Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute os testes:
+
+```bash
+python -m pytest
+```
+
+Para gerar os arquivos de distribuição:
+
+```bash
+python -m build
+```
+
+## Autor
+
 Marina Ribas
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Licença
+
+MIT
