@@ -1,6 +1,9 @@
 name: Publicar pacote Python no PyPI
 
 on:
+  push:
+    tags:
+      - 'v*'
   release:
     types: [published]
 
