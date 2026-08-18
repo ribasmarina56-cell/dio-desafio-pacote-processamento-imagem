@@ -19,10 +19,12 @@ Pacote Python para processamento e manipulação de imagens.
 ## Instalação
 
 ```bash
-pip install dio-desafio-pacote-processamento-imagem
+pip install dio-processamento-imagem-marina
 ```
 
 ## Uso
+
+O nome do projeto no PyPI é `dio-processamento-imagem-marina`, enquanto o módulo Python continua sendo `processamento_imagem`.
 
 ```python
 from processamento_imagem import (
