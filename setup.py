@@ -14,7 +14,7 @@ with open(ROOT_DIR / "requirements.txt", encoding="utf-8") as f:
     ]
 
 setup(
-    name="dio-desafio-pacote-processamento-imagem",
+    name="dio-processamento-imagem-marina",
     version="0.0.12",
     author="Marina Ribas",
     description="Pacote Python para processamento e manipulação de imagens",
