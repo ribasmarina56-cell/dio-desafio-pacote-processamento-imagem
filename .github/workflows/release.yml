@@ -44,6 +44,9 @@ jobs:
   publish-to-pypi:
     name: Publicar no PyPI
     needs: build
+v0.0.12
+
+    
     runs-on: ubuntu-latest
     environment:
       name: pypi
