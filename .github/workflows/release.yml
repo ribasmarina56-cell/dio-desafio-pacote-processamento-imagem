@@ -56,6 +56,8 @@ jobs:
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
           name: python-package-distributions
+
+          SSHA: 7b7b68a7c3d6b6387ad9f38c969a66fc7d6f895c
           path: dist
 
       - name: Publicar no PyPI
