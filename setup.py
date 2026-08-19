@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from setuptools import find_packages, setup
 
 ROOT_DIR = Path(__file__).parent
@@ -15,6 +16,11 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/ribasmarina56-cell/dio-desafio-pacote-processamento-imagem",
     packages=find_packages(),
+    install_requires=[
+        "matplotlib>=3.5",
+        "numpy>=1.21",
+        "scikit-image>=0.19",
+    ],
     python_requires=">=3.8",
     include_package_data=True,
     classifiers=[
